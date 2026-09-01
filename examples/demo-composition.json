@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "composition": {
+    "id": "motiongo-demo",
+    "name": "MotionGo Public Demo",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationFrames": 90
+  },
+  "assets": {
+    "images": [],
+    "svgs": [],
+    "fonts": []
+  },
+  "markers": [
+    { "id": "marker-intro", "name": "Intro", "frame": 0 },
+    { "id": "marker-title", "name": "Title", "frame": 15 },
+    { "id": "marker-end", "name": "End", "frame": 75 }
+  ],
+  "layers": [
+    {
+      "id": "bg-main",
+      "name": "Background",
+      "type": "background",
+      "startFrame": 0,
+      "durationFrames": 90,
+      "zIndex": 0,
+      "visible": true,
+      "locked": true,
+      "background": {
+        "sourceType": "gradient",
+        "gradient": "linear-gradient(180deg, #0f172a 0%, #111827 100%)"
+      },
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 1920,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "appearance": { "opacity": 1 },
+      "animation": { "enter": null, "hold": null, "exit": null, "keyframes": null }
+    },
+    {
+      "id": "shape-accent",
+      "name": "Accent Card",
+      "type": "shape",
+      "shapeKind": "rectangle",
+      "startFrame": 8,
+      "durationFrames": 74,
+      "zIndex": 5,
+      "visible": true,
+      "locked": false,
+      "transform": {
+        "x": 110,
+        "y": 620,
+        "width": 860,
+        "height": 520,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "appearance": {
+        "fill": "rgba(34,211,238,0.08)",
+        "stroke": { "width": 3, "color": "#22d3ee" },
+        "borderRadius": 36,
+        "opacity": 1,
+        "shadow": null
+      },
+      "animation": {
+        "enter": { "preset": "scale-in", "durationFrames": 12, "easing": "easeOutQuad" },
+        "hold": null,
+        "exit": { "preset": "fade", "durationFrames": 10, "easing": "easeOutQuad" },
+        "keyframes": null
+      }
+    },
+    {
+      "id": "text-title",
+      "name": "Title",
+      "type": "text",
+      "startFrame": 15,
+      "durationFrames": 60,
+      "zIndex": 10,
+      "visible": true,
+      "locked": false,
+      "text": "MotionGo",
+      "transform": {
+        "x": 140,
+        "y": 770,
+        "width": 800,
+        "height": 180,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "typography": {
+        "fontFamily": "Inter",
+        "fontWeight": 700,
+        "fontStyle": "normal",
+        "fontSize": 96,
+        "lineHeight": 1.1,
+        "letterSpacing": -1,
+        "wordSpacing": 0,
+        "textAlign": "center",
+        "verticalAlign": "top",
+        "textTransform": "none",
+        "whiteSpace": "normal",
+        "overflowWrap": "normal"
+      },
+      "appearance": {
+        "fill": "#ffffff",
+        "opacity": 1,
+        "stroke": { "width": 0, "color": "#000000" },
+        "shadow": null
+      },
+      "animation": {
+        "enter": { "preset": "fade-up", "durationFrames": 14, "easing": "easeOutQuad" },
+        "hold": null,
+        "exit": { "preset": "fade", "durationFrames": 10, "easing": "easeOutQuad" },
+        "keyframes": null
+      }
+    },
+    {
+      "id": "text-subtitle",
+      "name": "Subtitle",
+      "type": "text",
+      "startFrame": 23,
+      "durationFrames": 52,
+      "zIndex": 11,
+      "visible": true,
+      "locked": false,
+      "text": "Deterministic motion design",
+      "transform": {
+        "x": 160,
+        "y": 950,
+        "width": 760,
+        "height": 110,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "typography": {
+        "fontFamily": "Inter",
+        "fontWeight": 500,
+        "fontStyle": "normal",
+        "fontSize": 42,
+        "lineHeight": 1.2,
+        "letterSpacing": 0,
+        "wordSpacing": 0,
+        "textAlign": "center",
+        "verticalAlign": "top",
+        "textTransform": "none",
+        "whiteSpace": "normal",
+        "overflowWrap": "normal"
+      },
+      "appearance": {
+        "fill": "#a5f3fc",
+        "opacity": 1,
+        "stroke": { "width": 0, "color": "#000000" },
+        "shadow": null
+      },
+      "animation": {
+        "enter": { "preset": "fade", "durationFrames": 12, "easing": "easeOutQuad" },
+        "hold": null,
+        "exit": { "preset": "fade", "durationFrames": 10, "easing": "easeOutQuad" },
+        "keyframes": null
+      }
+    }
+  ]
+}
