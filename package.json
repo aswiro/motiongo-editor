@@ -1,0 +1,16 @@
+{
+  "name": "motiongo-v2",
+  "version": "2.0.0",
+  "description": "MotionGo V2 — Composition-based motion design editor and deterministic video renderer",
+  "scripts": {
+    "setup": "npm install && npx playwright install chromium && npm install --prefix renderer && npm install --prefix editor-v2",
+    "dev": "concurrently -n \"RENDERER,EDITOR,RENDER-API\" -c \"cyan,green,yellow\" \"npm run dev --prefix renderer\" \"npm run dev --prefix editor-v2\" \"node render-api.js\"",
+    "renderer": "npm run dev --prefix renderer",
+    "editor": "npm run dev --prefix editor-v2",
+    "render": "node render-v2.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "playwright": "^1.46.0"
+  }
+}
