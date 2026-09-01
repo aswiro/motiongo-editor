@@ -1,0 +1,27 @@
+node_modules/
+
+.env
+.env.*
+!.env.example
+
+output/
+frames/
+frames-v2/
+
+coverage/
+playwright-report/
+test-results/
+
+dist/
+*.log
+*.tmp
+*.bak
+
+.DS_Store
+.vscode/
+
+# Keep private research/customer materials out of this showcase
+materials/
+reports/
+archive/
+baseline-reference/
